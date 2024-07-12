@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Statistics Generator</title>
+</head>
+<body>
+<h1>Cricket Statistics Generator</h1>
+<form action="/" method="POST">
+<label for="user_input">Enter cricket statistics:</label>
+<input type="text" name="user_input" id="user_input">
+<input type="submit" value="Generate Output">
+</form>
+<br>
+{% if output %}
+<h2>Output:</h2>
+<p>{{ output }}</p>
+{% endif %}
+{% if error %}
+<h2>Error:</h2>
+<p>{{ error }}</p>
+{% endif %}
+</body>
+</html>
+
